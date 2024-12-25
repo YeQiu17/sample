@@ -1217,6 +1217,7 @@ async def get_person_count_over_time(req: func.HttpRequest) -> func.HttpResponse
             status_code=500
         )
 
+
      
 @app.function_name(name="getAllCounts")
 @app.route(route='api/getAllCounts', methods=[func.HttpMethod.GET])
