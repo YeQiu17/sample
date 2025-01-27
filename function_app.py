@@ -585,6 +585,7 @@ def delete_employee(req: func.HttpRequest) -> func.HttpResponse:
             # Use the partition key and document id for deletion
             employee_container.delete_item(item=item['id'], partition_key=item['id'])
             return func.HttpResponse(
+                
                 body=json.dumps({'message': 'Employee deleted successfully'}),
                 status_code=200,
                 mimetype="application/json"

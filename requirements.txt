@@ -9,4 +9,4 @@ natsort
 pydantic
 python-dotenv
 numpy
-
+jwt
